@@ -1,0 +1,906 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content=width="device-width,initial-scale=1.0">
+<style>
+
+
+.bodyMain{
+width:100%;
+
+
+
+
+}
+body,html
+{
+padding:0;
+margin:0;
+font-family:sans-serif;
+}
+.pillow
+{
+position:absolute;
+left:100px;
+top:30px;
+}
+header
+{position:fixed;
+background-color:white;
+width:100%;
+z-index:1;
+}
+.dropdown
+{height:100px;
+
+}
+.dropdown ul 
+{position:absolute;
+left:350px;
+top:5px;
+list-style-type:none;
+display:flex;
+position:relative;
+}
+.dropdown ul li
+{padding:30px;
+font-size:17px;
+}
+.dropdown ul li a
+{text-decoration:none;
+color:rgb(55,0,111);
+}
+.dropdown ul li a:hover
+{color:rgb(182,108,255);
+
+}
+.cart
+{position:absolute;
+top:40px;
+left:1200px;
+}
+.search
+{position:absolute;
+top:40px;
+left:1150px;
+}
+.submenu
+{display:none;
+}
+.dropdown ul li:hover .submenu 
+{display:block;
+
+}
+.dropdown ul li:hover .submenu ul
+{display:block;
+background:#b08ead;
+position:absolute;
+left:260px;
+top:80px;
+width:150px;
+border-radius:5px;
+z-index:2;
+
+}
+
+
+.dropdown ul li:hover .submenu .pagesmenu
+{display:block;
+background:#b08ead;
+position:absolute;
+left:380px;
+z-index:2;
+top:80px;
+width:130px;
+border-radius:5px;
+}
+.dropdown ul li:hover .submenu .blog-men
+{display:block;
+background:#b08ead;
+position:absolute;
+left:490px;
+z-index:2;
+top:80px;
+width:130px;
+border-radius:5px;
+}
+.dropdown ul li:hover .submenu ul li 
+{
+margin-left:-20px;
+font-size:15px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:0px;
+
+
+}
+.dropdown ul li:hover .submenu ul li a
+{
+color:white;
+}
+
+
+.content1
+{
+background:white;
+width:100%;
+height:700px;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+.divvi1
+{height:600px;
+width:490px;
+background:white;
+margin-top:40px;
+margin-left:100px;
+}
+ .first p
+{font-size:80px;
+color:rgb(81,0,81);
+
+}
+ .first .p1
+{color:rgba(81,0,81,0.8);
+
+font-size:20px;
+margin-top:-70px;
+}
+ .sec
+{height:550px;
+width:655px;
+
+}
+.first button
+{
+width:200px;
+padding:25px;
+outline:none;
+border-radius:10px;
+background:#b08ead;
+color:white;
+font-weight:bold;
+font-size:17px;
+margin-top:40px;
+}
+.first button:hover
+{border:2px solid #b08ead;
+background:white;
+color:#b08ead;
+}
+.content2
+{background:white;
+width:100%;
+height:600px;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+.divvi2
+{
+height:450px;
+width:500px;
+background:white;
+margin-top:60px;
+margin-left:130px;
+}
+.first2
+{box-shadow:-35px -35px #b08ead;
+}
+.sec2 p
+{
+color:rgba(81,0,81,0.8);
+font-size:20px;
+margin-top:30px;
+}
+.sec2 .p1
+{
+color:rgb(81,0,81);
+font-size:50px;
+margin-top:20px;
+}
+.sec2 button
+{
+width:200px;
+padding:25px;
+outline:none;
+border-radius:10px;
+font-weight:bold;
+font-size:17px;
+margin-top:-10px;
+border:2px solid #b08ead;
+background:white;
+color:#b08ead;
+}
+.sec2 button:hover
+{
+background:#b08ead;
+color:white;
+}
+.content3
+{background:white;
+width:100%;
+height:600px;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+.divvi3
+{
+height:450px;
+width:500px;
+background:white;
+margin-top:60px;
+margin-left:100px;
+}
+.sec3
+{box-shadow:35px -35px #b08ead;
+}
+.first3 p
+{
+color:rgba(81,0,81,0.8);
+font-size:20px;
+margin-top:30px;
+}
+.first3 .p1
+{
+color:rgb(81,0,81);
+font-size:50px;
+margin-top:20px;
+}
+.first3 button
+{
+width:200px;
+padding:25px;
+outline:none;
+border-radius:10px;
+font-weight:bold;
+font-size:17px;
+margin-top:-10px;
+border:2px solid #b08ead;
+background:white;
+color:#b08ead;
+}
+.first3 button:hover
+{
+background:#b08ead;
+color:white;
+}
+
+
+.content4
+{background:white;
+width:100%;
+height:600px;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}
+.divvi4
+{
+height:450px;
+width:500px;
+background:white;
+margin-top:60px;
+margin-left:130px;
+}
+.first4
+{box-shadow:-35px -35px #b08ead;
+}
+.sec4 p
+{
+color:rgba(81,0,81,0.8);
+font-size:20px;
+margin-top:30px;
+}
+.sec4 .p1
+{
+color:rgb(81,0,81);
+font-size:50px;
+margin-top:20px;
+}
+.sec4 button
+{
+width:200px;
+padding:25px;
+outline:none;
+border-radius:10px;
+font-weight:bold;
+font-size:17px;
+margin-top:-10px;
+border:2px solid #b08ead;
+background:white;
+color:#b08ead;
+}
+.sec4 button:hover
+{
+background:#b08ead;
+color:white;
+}
+.content5
+{background:rgba(215,215,215,0.3);
+width:100%;
+height:1300px;
+
+position:relative;
+}
+.item
+{height:400px;
+width:340px;
+background:white;
+margin-top:160px;
+margin-left:80px;
+float:left;
+}
+
+.item p
+{font-size:25px;
+color:rgb(81,0,81);
+}
+.item p:hover
+{color:rgba(81,0,81,0.8);
+}
+.item .p1
+{font-size:20px;
+color:rgba(81,0,81,0.8);
+}
+.trend
+{text-align:center;
+color:black;
+font-weight:bold;
+font-size:40px;
+position:absolute;
+top:40px;
+left:500px;
+}
+
+
+
+.content6
+{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+background-color:#b08ead;
+height:140%;
+
+}
+.division
+{width:250px;
+height:20%;
+margin:20px;
+margin-top:10%;
+margin-bottom:10%;
+margin-left:10%;
+position:relative;
+color:white;
+
+}
+
+
+
+.namme
+{font-weight:bold;
+font-size:25px;
+color:white;
+text-align:center;
+padding:0px;
+}
+.para1
+{text-align:center;
+}
+.para2
+{font-size:15px;
+text-align:left;
+padding:0px;
+margin-left:10%;
+}
+.content7
+{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+background-color:#fff;
+
+}
+.t
+{
+
+width:35%;
+background:white;
+margin-top:10%;
+margin-left:100px;
+margin-bottom:5%;
+}
+.t1
+{width:40%;
+}
+
+.textinbold
+{font-size:250%;
+padding:30px;
+color:rgb(81,0,81);
+
+}
+.smallwriting
+{font-size:100%;
+padding-top:14%;
+color:rgb(81,0,81);
+}
+.content8
+{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+background-color:white;
+position:relative;
+}
+.help
+{
+width:20%;
+height:40%;
+background-color:white;
+margin-top:5%;
+margin-left:100px;
+margin-bottom:10%;
+border:1px solid rgb(215,215,215);
+}
+.helppara
+{text-align:center;
+font-size:120%;
+}
+.help-image
+{
+padding-top:15%;
+padding-left:40%;
+}
+.content9
+{width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+background-color:#4b3049;
+}
+.innerdiv
+{
+width:50%;
+height:40%;
+background-color:#4b3049;
+margin-top:15%;
+margin-left:25%;
+margin-bottom:20%;
+
+}
+form
+{width:90%;
+height:20%;
+border:2px solid white;
+background:#4b3049
+margin-left:25%;
+border-radius:40px;
+margin-top:7%;
+}
+input
+{margin-top:1%;
+margin-left:1%;
+}
+input[type="text"]
+{width:67%;
+height:40%;
+color:white;
+outline:none;
+padding-left:3%;
+background:#4b3049;
+border:1px solid #4b3049;
+
+}
+::placeholder
+{
+color:white;
+}
+input[type="submit"]
+{width:25%;
+height:80%;
+color:white;
+font-size:120%;
+border-radius:40px;
+background:#b08ead;
+}
+.content10
+{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+}
+footer
+{margin-top:5%;
+margin-bottom:10%;
+background:white;
+width:100%;
+position:relative;
+}
+.footerpillow
+{position:absolute;
+top:40px;
+left:100px;
+}
+
+.dropdown .ull
+{position:relative;
+left:300px;
+padding:10px;
+}
+.footerend
+{width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+display:flex;
+background:#f4edf2;
+}
+@media(max-width:430px){
+header{
+grid-area:header;
+
+
+
+display:grid;
+grid-template-areas:
+'pillow'
+'dropdown';
+
+
+
+
+}
+.content1{grid-area:content1;
+
+}
+
+.content2{grid-area:content2;}
+
+.content3{grid-area:content3;}
+
+.content4{grid-area:content4;}
+.content5{grid-area:content5;}
+.content6{grid-area:content6;}
+.content7{grid-area:content7;}
+
+.content8{grid-area:content8;}
+.content9{grid-area:content9;}
+.content10{grid-area:content10;}
+.footerend{grid-area:footerend;}
+.bodyMain{
+display:grid;
+grid-template-areas:
+'header'
+'content1'
+'content2'
+'content3'
+'content4'
+'content5'
+'content6'
+'content7'
+'content8'
+'content9'
+'content10'
+'footerend';
+
+
+
+}
+
+
+.pillow{
+grid-area:pillow;
+}
+.dropdown{
+
+grid-area:dropdown;
+
+
+}
+
+.search{
+
+grid-area:search;
+
+
+}
+.cart{
+grid-area:cart;
+
+}
+
+
+
+
+
+}
+
+</style>
+</head>
+<body>
+<div class="bodyMain">
+<header>
+<img class="pillow" src="img/pillow.png"></img>
+<nav class ="dropdown">
+<ul>
+<li><a href="#"> Home</a></li>
+<li><a href="#"> About</a></li>
+<li><a href="#">Product</a>
+<nav class="submenu">
+<ul>
+<li><a href="#"> Product List</a></li>
+<li><a href="#">Product Details</a></li>
+</ul>
+</nav>
+
+</li>
+<li><a href="#">Pages</a>
+
+<nav class="submenu">
+<ul class="pagesmenu">
+<li><a href="#"> Login</a></li>
+<li><a href="#">Product Checkout</a></li>
+<li><a href="#">Element</a></li>
+<li><a href="#">Shopping Cart</a></li>
+<li><a href="#">Confirmation</a></li>
+</ul>
+</nav>
+
+
+
+</li>
+<li><a href="#">Blog</a>
+
+<nav class="submenu">
+<ul class="blog-men">
+<li><a href="#"> Blog</a></li>
+<li><a href="#">Single Blog</a></li>
+</ul>
+</nav>
+
+
+
+</li>
+<li><a href="#">Contact</a></li>
+</ul >
+</nav>
+<img class="search" src="img/search.png"></img>
+<img class="cart" src="img/cartpur.png"></img>
+</header>
+
+
+
+
+<div class="content1">
+<div class="divvi1 first">
+<p>Best quality pillow</p>
+<p class="p1">Seamlessly empower fully researched growth <br>strategies and interoperable internal</p>
+<button>Shop Now</button>
+</div>
+<div class="divvi1 sec">
+<img  style="width:650px;height:600px"src="img/p1new.png"></img>
+</div>
+</div>
+
+<div class="content2">
+<div class="divvi2 first2">
+<img style="height:450px;" src="img/p2.png" ></img>
+</div>
+<div class="divvi2 sec2">
+<p>Started from $10</p>
+
+<p class="p1">
+Printed memory foam brief modern throw pillow case</p>
+<button>Explore Now</button>
+</div>
+</div>
+
+
+
+<div class="content3">
+<div class="divvi3 first3">
+<p>Started from $10</p>
+<p class="p1">
+Printed memory foam brief modern throw pillow case</p>
+<button>Explore Now</button>
+
+</div>
+<div class="divvi3 sec3">
+<img style="height:450px;width:500px;" src="img/p3.png" ></img>
+</div>
+</div>
+
+<div class="content4">
+<div class="divvi4 first4">
+<img style="height:450px;" src="img/p4.png" ></img>
+</div>
+<div class="divvi4 sec4">
+<p>Started from $10</p>
+<p class="p1">
+Printed memory foam brief modern throw pillow case</p>
+<button>Explore Now</button>
+</div>
+</div>
+
+<div class="content5">
+<p class="trend">Trending Items</p>
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/1st.png"></img>
+</div>
+<div class="text">
+<p>Cervical pillow for airplane car office na pillow</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/second.png"></img>
+</div>
+<div class="text">
+<p>Foam filling cotton slow rebound pillows</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/3rd.png"></img>
+</div>
+<div class="text">
+<p>Memory foam filling cotton slow rebound pillows</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/4th.png"></img>
+</div>
+<div class="text">
+<p>Cervical pillow for airplane car office na pillow</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/5th.png"></img>
+</div>
+<div class="text">
+<p>Cervical pillow for airplane car office na pillow</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+<div class="item">
+<div class="pic">
+<img style="width:100%;" src="img/6th.png"></img>
+</div>
+<div class="text">
+<p>Cervical pillow for airplane car office na pillow</p>
+<p class="p1">From $5</p>
+</div>
+</div>
+
+</div>
+
+<div class="content6">
+<!First-->
+<div class="division">
+<div class="imagee">
+<img style="width:70%;margin-left:20%;" src="img/t1.png"></img>
+</div>
+<div class="text">
+<p class="namme">William Debris</p>
+<p class="para1">Graphic Designer</p>
+<p class="para2">AtlanticBT has a number of interesting features on their team page.
+ Each employee has a photo that, upon hover.</p>
+
+</div>
+</div>
+<!Second-->
+<div class="division">
+<div class="imagee">
+<img style="width:70%;margin-left:20%;" src="img/t1.png"></img>
+</div>
+<div class="text">
+<p style="margin-top:30px;" class="namme">John Author</p>
+<p class="para1">Content Writer</p>
+<p class="para2">AtlanticBT has a number of interesting features on their team page.
+ Each employee has a photo that, upon hover.</p>
+</div>
+
+
+</div>
+<!Third-->
+<div class="division">
+
+<div class="imagee">
+<img style="width:50%;margin-left:20%;" src="img/t.png"></img>
+</div>
+<div class="text">
+<p style="margin-top:50px;" class="namme">Elma Watson</p>
+<p class="para1">CEO</p>
+<p class="para2">AtlanticBT has a number of interesting features on their team page.
+ Each employee has a photo that, upon hover. </p>
+</div>
+
+
+</div>
+</div>
+<div class="content7">
+<div class="t t1">
+<p class="textinbold">Credibly innovate granular internal or organic sources whereas standards.</p>
+</div>
+<div class="t t2">
+<p class="smallwriting">Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” 
+sources whereas high standards in web-readiness.</p>
+</div>
+
+<div class="content8">
+
+<div class="help ccp">
+<img  class="help-image" style="padding-left:30%; padding-top:10%;" src="img/credit-card.png"></img>
+<p class="helppara">Credit Card Support</p>
+</div>
+<div style="margin-left:2%;"class="help onlineorder">
+<img class="help-image" src="img/online-order.png"></img>
+<p class="helppara">Online Order</p>
+</div>
+<div style="margin-left:2%;" class="help del">
+<img class="help-image" src="img/free.png"></img>
+<p class="helppara">Free Delivery</p>
+</div>
+<div style="margin-left:2%;" class="help product">
+<img class="help-image" src="img/gift.png"></img>
+<p class="helppara">Product and gift</p>
+</div>
+</div>
+
+<div class="content9">
+<div class="innerdiv">
+<h1 style="text-align:center;color:white;font-size:300%;">Get promotions & updates!</h1>
+<p style="text-align:center;color:white;">Seamlessly empower fully researched growth strategies and interoperable internal
+ or “organic” sources credibly innovate granular internal .</p>
+<form>
+<input placeholder="Enter Email" type="text"></input>
+<input  type="submit" value="Subscribe"></input>
+</form>
+</div>
+</div>
+
+
+<div class="content10">
+<footer>
+<img class="footerpillow" src="img/pillow.png"></img>
+<nav class ="dropdown">
+<ul class="ull" >
+<li><a href="#"> Home</a></li>
+<li><a href="#"> About</a></li>
+<li><a href="#"> Pages</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#"> Contact</a></li>
+<img style="margin-left:160px;height:60px;" src="img/ss.png"></img>
+
+</footer>
+
+</div>
+<div class="footerend">
+<p style="margin:30px;margin-left:100px;color:purple;">Copyright ©2020 All rights reserved | The Tech Valley </p>
+<p style="margin:30px;color:purple;margin-left:300px;">Terms & Conditions</p>
+<p style="margin:30px;color:purple;">FAQ</p>
+</div>
+
+<div>
+</body>
+</html>

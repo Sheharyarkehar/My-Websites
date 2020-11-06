@@ -1,0 +1,48 @@
+.Cards{
+float:left;
+width:23%;
+border-radius: 20px;
+margin:60px;
+margin-top:150px;
+height:400px;
+background-color: white;
+transition: 0.8s;
+}
+.Card{
+width:100%;
+height:70%;
+border-radius: 20px;
+
+}
+.card_image{
+width:100%;
+height:100%;
+border-radius: 20px 20px 0 0;
+
+}
+.card_category{
+text-align: left;
+padding-left:30px;
+
+
+}
+.card_name{
+    text-align: left;
+    padding-left:30px;
+    
+
+
+}
+button
+{
+background-color: transparent;
+margin-right: 170px;
+
+
+}
+
+.Cards:hover{
+
+transform: scale(1.1,1.1);
+
+}
